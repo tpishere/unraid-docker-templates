@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Alist</Name>
+  <Repository>xhofe/alist</Repository>
+  <Registry>https://hub.docker.com/r/xhofe/alist</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>AList&#x662F;&#x4E00;&#x6B3E;&#x652F;&#x6301;&#x591A;&#x79CD;&#x5B58;&#x50A8;&#x7684;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x5217;&#x8868;&#x7A0B;&#x5E8F;&#xFF0C;&#x540E;&#x7AEF;&#x57FA;&#x4E8E;gin&#xFF0C;&#x524D;&#x7AEF;&#x4F7F;&#x7528;react&#x3002;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5244]/</WebUI>
+  <TemplateURL/>
+  <Icon>http://192.168.0.66:5244/d/Public/can_circle.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646664223</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>AList&#x662F;&#x4E00;&#x6B3E;&#x652F;&#x6301;&#x591A;&#x79CD;&#x5B58;&#x50A8;&#x7684;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x5217;&#x8868;&#x7A0B;&#x5E8F;&#xFF0C;&#x540E;&#x7AEF;&#x57FA;&#x4E8E;gin&#xFF0C;&#x524D;&#x7AEF;&#x4F7F;&#x7528;react&#x3002;</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5244</HostPort>
+        <ContainerPort>5244</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/apps/alist</HostDir>
+      <ContainerDir>/opt/alist/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/public</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Config" Target="/opt/alist/data" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /opt/alist/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/apps/alist</Config>
+  <Config Name="Host Port 1" Target="5244" Default="5244" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
+  <Config Name="public" Target="/public" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /public" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+</Container>

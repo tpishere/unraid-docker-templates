@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>JDX</Name>
+  <Repository>registry.cn-hangzhou.aliyuncs.com/yiidii-hub/jdx:v0.2.4</Repository>
+  <Registry>https://registry.hub.docker.com/r/grbhq/jdx</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4EAC;&#x4E1C;&#x77ED;&#x4FE1;&#x767B;&#x9646;docker&#x955C;&#x50CF;</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5705]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/32561537?v=4</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646653384</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4EAC;&#x4E1C;&#x77ED;&#x4FE1;&#x767B;&#x9646;docker&#x955C;&#x50CF;</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5705</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/apps/jdx/config</HostDir>
+      <ContainerDir>/jdx/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/jdx/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /jdx/config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/apps/jdx/config</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="true" Mask="false">5705</Config>
+</Container>

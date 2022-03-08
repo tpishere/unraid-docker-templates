@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>clash-client</Name>
+  <Repository>dreamacro/clash</Repository>
+  <Registry>https://hub.docker.com/r/dreamacro/clash</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9090]/ui</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Dreamacro/clash/master/docs/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646128038</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/clash-client/config.yaml</HostDir>
+      <ContainerDir>/root/.config/clash/config.yaml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/clash-client/ui</HostDir>
+      <ContainerDir>/root/.config/clash/ui</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="config.yaml" Target="/root/.config/clash/config.yaml" Default="/mnt/user/appdata/clash-client/config.yaml" Mode="rw" Description="clash-client config.yaml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clash-client/config.yaml</Config>
+  <Config Name="ui" Target="/root/.config/clash/ui" Default="/mnt/user/appdata/clash-client/ui" Mode="rw" Description="clash-dashboard " Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clash-client/ui</Config>
+</Container>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>StairSpeedtestReborn</Name>
+  <Repository>weleven11/stairspeedtest-reborn</Repository>
+  <Registry>https://hub.docker.com/r/weleven11/stairspeedtest-reborn</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/tindy2013/stairspeedtest-reborn</Project>
+  <Overview>Proxy performance batch tester based on Shadowsocks(R), V2Ray and Trojan</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:65430]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/49061470?v=4</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646753097</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Proxy performance batch tester based on Shadowsocks(R), V2Ray and Trojan</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/apps/stairspeedtest/results/</HostDir>
+      <ContainerDir>/speedtest/results</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/speedtest/results" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /speedtest/results" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/apps/stairspeedtest/results/</Config>
+</Container>

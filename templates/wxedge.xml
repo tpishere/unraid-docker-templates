@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wxedge</Name>
+  <Repository>onething1/wxedge</Repository>
+  <Registry>https://hub.docker.com/r/onething1/wxedge</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x2F79;&#x2F3C;&#x4E91;&#x5BB9;&#x5668;&#x7248;</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:18888]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams>--tmpfs /run --tmpfs /tmp</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646379460</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x2F79;&#x2F3C;&#x4E91;&#x5BB9;&#x5668;&#x7248;</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disk2/wxedge_storage</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>192.168.0.66:18888</Value>
+      <Name>LISTEN_ADDR</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Path" Target="/storage" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /storage" Type="Path" Display="always" Required="true" Mask="false">/mnt/disk2/wxedge_storage</Config>
+  <Config Name="WebUI" Target="LISTEN_ADDR" Default="" Mode="" Description="Container Variable: LISTEN_ADDR" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.66:18888</Config>
+</Container>

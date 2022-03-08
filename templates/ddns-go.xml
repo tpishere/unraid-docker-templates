@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-go</Name>
+  <Repository>jeessy/ddns-go:latest</Repository>
+  <Registry>https://hub.docker.com/r/jeessy/ddns-go</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>&#x81EA;&#x52A8;&#x83B7;&#x5F97;&#x4F60;&#x7684;&#x516C;&#x7F51; IPv4 &#x6216; IPv6 &#x5730;&#x5740;&#xFF0C;&#x5E76;&#x89E3;&#x6790;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x57DF;&#x540D;&#x670D;&#x52A1;&#xD;
+&#x652F;&#x6301;&#x7684;&#x57DF;&#x540D;&#x670D;&#x52A1;&#x5546; Alidns(&#x963F;&#x91CC;&#x4E91;) Dnspod(&#x817E;&#x8BAF;&#x4E91;) Cloudflare &#x534E;&#x4E3A;&#x4E91;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9876]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/jeessy2/ddns-go/master/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646129029</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x81EA;&#x52A8;&#x83B7;&#x5F97;&#x4F60;&#x7684;&#x516C;&#x7F51; IPv4 &#x6216; IPv6 &#x5730;&#x5740;&#xFF0C;&#x5E76;&#x89E3;&#x6790;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x57DF;&#x540D;&#x670D;&#x52A1;&#xD;
+&#x652F;&#x6301;&#x7684;&#x57DF;&#x540D;&#x670D;&#x52A1;&#x5546; Alidns(&#x963F;&#x91CC;&#x4E91;) Dnspod(&#x817E;&#x8BAF;&#x4E91;) Cloudflare &#x534E;&#x4E3A;&#x4E91;</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ddns-go</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>9876</Value>
+      <Name>l</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1200</Value>
+      <Name>f</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path" Target="/root" Default="" Mode="rw" Description="Container Path:&#13;&#10;/root" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ddns-go</Config>
+  <Config Name="Web Port" Target="l" Default="9876" Mode="" Description="Container Port:&#13;&#10;9876" Type="Variable" Display="always" Required="false" Mask="false">9876</Config>
+  <Config Name="Intervals" Target="f" Default="600" Mode="" Description="Intervals  (seconds)&#13;&#10;Default Value: 600" Type="Variable" Display="always" Required="false" Mask="false">1200</Config>
+</Container>
