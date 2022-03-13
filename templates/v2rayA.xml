@@ -13,11 +13,11 @@
   <Category>Tools: Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:2017]/</WebUI>
   <TemplateURL/>
-  <Icon>http://192.168.0.66:5244/d/Public/v2ray_1024.png</Icon>
+  <Icon>https://github.com/tpishere/unraid-docker-templates/raw/main/templates/icons/v2ray.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1647186324</DateInstalled>
+  <DateInstalled>1647186621</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>v2rayA &#x662F;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x5168;&#x5C40;&#x900F;&#x660E;&#x4EE3;&#x7406;&#x7684; V2Ray Linux &#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x540C;&#x65F6;&#x517C;&#x5BB9;SS&#x3001;SSR&#x3001;Trojan(trojan-go)&#x3001;PingTunnel&#x534F;&#x8BAE;&#x3002;</Description>
